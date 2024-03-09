@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #e68312;
+    --secondary-color: #e6c612;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    /* color: #fff; */
+    transition: all 0.4s ease-in-out;
+}
+
+body {
+    background-color: rgb(49, 62, 107);
+}
+
+.page-1 {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding: 0rem 11.5rem; */
+    align-items: center;
+    gap: 8rem;
+}
+
+.quote-head {
+
+    width: 30rem;
+    color: #fff;
+    font-size: 35px;
+}
+
+.auto-typing-text {
+    color: yellow;
+}
+
+.community-name {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.art-nation1 {
+    margin-left: 1rem;
+    width: 9rem;
+    border-radius: 15px;
+}
+
+.navbar {
+    background-color: #283353;
+    padding: 1rem;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.page-1-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    text-align: left;
+}
+
+.sample-art-page-1 {
+    /* opacity: 0; */
+    border-radius: 20px;
+    height: 350px;
+    animation-name: right-to-left;
+    animation-delay: 0.4s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes right-to-left {
+    0% {
+        translate: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0%;
+    }
+}
+
+
+
+/* ------------------------- THIS PART WAS IMPORTED FROM SEARCH BUTTON PROJECT------------------------------------ */
+
+
+
+#check {
+    display: none;
+}
+
+.main-box {
+    position: relative;
+    left: 380px;
+    top: 0;
+    margin: auto;
+    display: flex;
+}
+
+.input-area {
+    position: fixed;
+    right: 1.3rem;
+    top: 0.8rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.lab-icon i {
+    color: var(--primary-color);
+}
+
+#check:checked~.input-area {
+    width: 23rem !important;
+    position: fixed;
+    right: 1.5rem;
+    top: 0.8rem;
+
+    .lab-icon {
+        color: #fff;
+        background: #fff;
+        border-radius: 0 25px 25px 0;
+        border-right: 1px solid #fff;
+        width: 2.5rem;
+    }
+}
+
+
+.type-area {
+    border-radius: 25px 25px;
+    font-size: 15px;
+    height: 2.4rem;
+    outline: none;
+    border: none;
+    padding-left: 17px;
+}
+
+.icon {
+    position: fixed;
+    border-radius: 50%;
+    text-align: center;
+    right: 20px;
+    top: 0.8rem;
+    background: #ffffff;
+    height: 2.4rem;
+    width: 2.4rem;
+    line-height: 2.4rem;
+    font-size: 17px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+/* --------------------------------------UPTO THIS---------------------------------------------------------------- */
+
+.page-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-2 .artwork-part-1,
+.page-2 .artwork-part-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.art {
+    /* opacity: 0; */
+    justify-self: center;
+    align-content: center;
+    margin: 2rem;
+}
+
+.art1 {
+    filter: blur(5px);
+}
+
+.art2 {
+    filter: blur(5px);
+}
+
+.artist-NAME a{
+    color: yellow;
+}
+
+.artist-NAME{
+    margin: 0.3rem 0;
+    font-size: 18px;
+}
+
+.artist-details i{
+    font-size: 27px;
+    margin: 0 0.3rem;
+
+}
+
+.artist-details i:hover{
+    cursor: pointer;
+}
+
+.artist-details{
+    margin-top: 0.7rem;
+}
+
+.show-from-left {
+    /* opacity: 1; */
+    filter: blur(0);
+    /* transform: translateX(0%);     */
+    animation-name: left-to-right;
+    /* animation-delay: 0.4s; */
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.show-from-left2 {
+    /* opacity: 1; */
+    filter: blur(0);
+    animation-name: right-to-left2;
+    /* animation-delay: 0.4s; */
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes right-to-left2 {
+    0% {
+        translate: 20%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0%;
+    }
+}
+@keyframes left-to-right {
+    0% {
+        translate: -20%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0%;
+    }
+}
+
+
+
+figure {
+    color: #fff;
+}
+
+.art-img img {
+    height: 20rem;
+    border-radius: 15px;
+}
+
+.studhead2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(93, 26, 156);
+    font-weight: 700;
+}
+
+.studhead2 a {
+    text-decoration: none;
+}
+
+.studhead2 a:hover {
+    text-decoration: none;
+}
+
+.studhead2 a:active {
+    color: rgb(93, 26, 156);
+}
+
+.studhead2{
+    display: flex;
+    padding-bottom: 1rem;
+    gap:0.1rem;
+}
+
+.links .fa-brands{
+    color: rgb(153, 153, 153);
+    font-size: 1.7rem;
+    padding:0.3rem
+}
+
+.links .fa-brands:hover{
+    color: rgb(255, 255, 255);
+}
+
+.line2{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(148, 148, 148);
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 50px;
+}
+
+
+.line1{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(148, 148, 148);
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-radius: 50px;
+}
+
+
+.footpart1{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 3.5rem;
+    padding-top: 1.5rem;
+    font-family: 'Poppins';
+}
+
+.footheads{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+.foots{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    transition: all 0.1s ease-in-out;
+}
+
+.foots:hover{
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+}
+
+.foottopics{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.foottopics h4,
+.foottopics a
+{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.leftmost{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footpart2{
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.art-nation12{
+    width: 11rem;
+    border-radius: 9px;
+}
+
+.page-2-intro{
+    margin:1rem 0; 
+    color: #fff; 
+    width: 30rem; 
+    margin: 1rem auto; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.page-1-intro{
+    color: #fff; 
+    width: 30rem; 
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .artwork-part-1{
+        width: 22rem;
+    }
+    .art-img img {
+        height: 13rem;
+        border-radius: 15px;
+    }
+    .page-1 {
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .page-1-quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote-head {
+        /* display: flex; */
+        font-size: 25px;
+        width: fit-content;
+    }
+
+    .sample-art-page-1 {
+        height: 10rem;
+    }
+
+    .whatisart {
+        font-size: 14px;
+    }
+
+    .art-nation1 {
+        width: 9rem;
+        margin: 0;
+    }
+
+    .navbar {
+        height: 4rem;
+    }
+
+    #check:checked~.input-area {
+        width: 18rem !important;
+        height: 2rem;
+        top: 4.5rem;
+
+        .lab-icon {
+            height: 2rem;
+            width: 2rem;
+        }
+
+        .icon {
+            top: 4.5rem;
+        }
+    }
+
+    .lab-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        top: -0.2rem;
+        left: 0;
+    }
+
+    .input-area {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .icon {
+        top: .8rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .page-2{
+        flex-direction: column;
+    }
+
+    .auto-typing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footpart1{
+        display: flex;
+        flex-direction: column;
+    }
+    .page-2-intro{
+        width: 22rem;
+    }
+    .page-1-intro{
+        width: 22rem;
+    }
+}
+
