@@ -306,13 +306,9 @@ figure {
 }
 
 .links .fa-brands{
-    color: rgb(153, 153, 153);
+    color: rgb(255, 255, 255);
     font-size: 1.7rem;
     padding:0.3rem
-}
-
-.links .fa-brands:hover{
-    color: rgb(255, 255, 255);
 }
 
 .line2{
@@ -415,6 +411,38 @@ figure {
     text-align: center;
 }
 
+.person-name{
+    display: flex;
+    gap: 0.3rem;
+}
+.designers{
+    display: flex;
+    flex-direction: column;
+}
+
+.mohan-creds{
+    margin: 0.9rem 0 2rem 0;
+}
+
+.creds{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.person-links{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.creds a i{
+    font-size: 25px;
+}
+
+.human{
+    height: 30px;
+}
+
 @media (max-width: 768px) {
     .artwork-part-1{
         width: 22rem;
@@ -460,12 +488,12 @@ figure {
 
     #check:checked~.input-area {
         width: 18rem !important;
-        height: 2rem;
+        height: 2.2rem;
         top: 4.5rem;
 
         .lab-icon {
-            height: 2rem;
-            width: 2rem;
+            height: 2.2rem;
+            width: 2.2rem;
         }
 
         .icon {
@@ -474,25 +502,25 @@ figure {
     }
 
     .lab-icon {
-        height: 2rem;
-        width: 2rem;
+        height: 2.2rem;
+        width: 2.2rem;
     }
 
     .fa-magnifying-glass {
         position: relative;
-        top: -0.2rem;
+        top: -0.1rem;
         left: 0;
     }
 
     .input-area {
-        height: 2rem;
-        width: 2rem;
+        height: 2.2rem;
+        width: 2.2rem;
     }
 
     .icon {
         top: .8rem;
-        height: 2rem;
-        width: 2rem;
+        height: 2.2rem;
+        width: 2.2rem;
     }
 
     .page-2{
