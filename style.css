@@ -418,6 +418,8 @@ figure {
 .designers{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mohan-creds{
@@ -427,6 +429,8 @@ figure {
 .creds{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -444,8 +448,6 @@ figure {
 }
 
 @media (max-width: 768px) {
-    
-
     .art-img img {
         width: 20rem;
         border-radius: 15px;
