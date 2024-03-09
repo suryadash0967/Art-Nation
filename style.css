@@ -447,6 +447,11 @@ figure {
     height: 30px;
 }
 
+.bxl-telegram{
+    font-size: 22px;
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .art-img img {
         width: 20rem;
