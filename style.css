@@ -444,11 +444,10 @@ figure {
 }
 
 @media (max-width: 768px) {
-    .artwork-part-1{
-        width: 22rem;
-    }
+    
+
     .art-img img {
-        height: 13rem;
+        width: 20rem;
         border-radius: 15px;
     }
     .page-1 {
