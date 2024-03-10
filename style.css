@@ -276,7 +276,8 @@ figure {
 }
 
 .art-img img {
-    width: 24rem;
+    width: 25rem;
+height: 20rem
     border-radius: 15px;
 }
 
