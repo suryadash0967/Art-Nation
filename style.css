@@ -453,6 +453,11 @@ height: 23rem;
     color: #fff;
 }
 
+.vercel-link{
+    color: #fff;
+    /* font-size: 25px; */
+}
+
 @media (max-width: 768px) {
     .art-img img {
         width: 20rem;
